@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "vu"
+      VERSION: "2k"
     devices:
       - /dev/kvm
       - /dev/net/tun
