@@ -15,5 +15,10 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
+    volumes:
+  - /run/user/1000/pulse/native:/run/user/1000/pulse/native
+   environment:
+  - PULSE_SERVER=unix:/run/user/1000/pulse/native
+
     restart: always
     stop_grace_period: 2m
