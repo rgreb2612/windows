@@ -31,7 +31,7 @@ spec:
         image: dockurr/windows
         env:
         - name: VERSION
-          value: "7u"
+          value: "11"
         - name: DISK_SIZE
           value: "8G"
         ports:
